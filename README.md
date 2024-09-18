@@ -1,7 +1,7 @@
 # Bootcamp - Data Science - Septiembre 2024 - The Bridge
 
 
-![The Bridge](./1_Data_Analysis/0_Matematicas_DS/img/TheBridge_logo.png)
+![The Bridge](./1-Fundamentals/Python/img/TheBridge_logo.png)
 
 ----------
 
