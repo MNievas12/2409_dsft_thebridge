@@ -1,1 +1,1 @@
-print("Adiós")
+print("Adiós, pero ahora funcionará")
