@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from datos_dummy import books
+import uvicorn
+
 
 
 app = FastAPI()
@@ -30,3 +32,5 @@ async def get_book_by_id(book_id: int):
 # Endpoint para eliminar un libro por su índice
 
 # Ejecutar la aplicación
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
