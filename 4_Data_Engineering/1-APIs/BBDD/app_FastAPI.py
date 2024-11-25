@@ -24,12 +24,29 @@ async def get_book_by_id(book_id: int):
     return results
 
 # Endpoint para añadir un libro
-
+@app.post("/v1/books", status_code=201)
+async def add_book(title: str, author: str, year: int):
+    new_book = {"title": title, "author": author, "year": year}
+    books.append(new_book)
+    return new_book
 
 # Endpoint para modificar un libro por su índice
-
+@app.put("/v1/books/{index}")
+async def update_book(index: int, title: str, author: str, year: int):
+    if index < 0 or index >= len(books):
+        raise HTTPException(status_code=404, detail="Book not found")
+    books[index] = {"title": title, "author": author, "year": year}
+    return books[index]
 
 # Endpoint para eliminar un libro por su índice
+@app.delete("/v1/books/{index}")
+async def delete_book(index: int):
+    if index < 0 or index >= len(books):
+        raise HTTPException(status_code=404, detail="Book not found")
+    deleted_book = books.pop(index)
+    return deleted_book
+
+
 
 # Ejecutar la aplicación
 if __name__ == "__main__":
