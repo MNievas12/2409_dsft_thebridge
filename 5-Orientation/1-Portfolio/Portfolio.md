@@ -58,7 +58,7 @@ Intenta mantener el portfolio actualizado con tus proyectos o artículos. Si tie
 
 # Proyectos durante el Bootcamp
 
-Durante estas **14 semanas** has realizado nada más y nada menos que **10 proyectos personales** en los que has demostrado, desde tu **evolución** paquetizando y desarrollando funciones en **Python**, hasta todo el abanico de **librerías** que conoces y eres capaz de utilizar como **Data Scientist**.
+Durante estas **12 semanas** has realizado nada más y nada menos que **10 proyectos personales** en los que has demostrado, desde tu **evolución** paquetizando y desarrollando funciones en **Python**, hasta todo el abanico de **librerías** que conoces y eres capaz de utilizar como **Data Scientist**.
 
 - **Python & Numpy Hundir la flota**
 - **EDA**
